@@ -14,15 +14,26 @@ You will use Express to handle routing. Make sure you deploy your app to Heroku 
   FriendFinder
     - .gitignore
     - app
+
       - data
-        - friends.js
+
+        - friends.js - hold array of objects - name, photo(maybe), scores.
+
       - public
-        - home.html
-        - survey.html
+
+        - home.html - not needed?
+
+        - survey.html - survery data
+
       - routing
-        - apiRoutes.js
-        - htmlRoutes.js
+        - apiRoutes.js -A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
+A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+
+
+        - htmlRoutes.js -  GET Route to /survey which should display the survey page A default, catch-all route that leads to home.html which displays the home page.
     - node_modules
+
     - package.json
-    - server.js
+
+    - server.js  - express and path npm packages
   

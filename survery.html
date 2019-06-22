@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 </head>
 <body>   
@@ -45,7 +46,7 @@
   <div class="dropdown show">
         <h4>Question Two:</h4>
         <h5>Generally speaking, you rely more on your own experience than your imagination:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="qTwo"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Make your selection
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -179,7 +180,7 @@
 
   <button id="submitBtn" class="btn btn-primary">Submit!</button>
 
-  <div id="FriendModal" class="modal fade" role="dialog">
+  <div id="friendModal" class="modal fade" role="dialog">
        <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -200,9 +201,14 @@
 </body>
 </html>
 
-<script type="text/javascript">
-  
-$("#submitBtn").on("click", function(event) {
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+
+$(document).ready(function() {
+   
+  $(".dropdown-toggle").dropdown();{
+
+  $("#submitBtn").on("click", function(event) {
 		event.preventDefault();
 		console.log('click');
 		var valid = true;
@@ -236,6 +242,7 @@ $("#submitBtn").on("click", function(event) {
 			
 			alert("Finish the survery if you want a friend!!");
 		}
-  });
+  }); 
+   });
   
 </script>

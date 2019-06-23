@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     
 </head>
 <body>   
@@ -27,156 +27,127 @@
    <div class="form-group">
 				<input id="name" type="text" class="form-control" placeholder="Humpty Dumpty">
 			</div>
-
-<div class="dropdown show">
-        <h4>Question One:</h4>
+      
+      <div class="form-group">
+      <h4>Question One:</h4>
         <h5>your mind is always buzzing with unexplored ideas and plans:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
+    <select class="form-control" id="qOne">
+      <a option value="1">1</option>
+      <a option value="2">2</option>
+      <a option value="3">3</option>
+      <a option value="4">4</option>
+      <a option value="5">5</option>
+      </select>
     </div>
+  
+
+  <div class="form-group">
+    <h4>Question Two:</h4>
+    <h5>Generally speaking, you rely more on your own experience than your imagination:</h5>
+      <select class="form-control" id="qTwo">
+          <a option value="1">1</option>
+           <a option value="2">2</option>
+           <a option value="3">3</option>
+          <a option value="4">4</option>
+           <a option value="5">5</option>
+          </select>
   </div>
 
-  <div class="dropdown show">
-        <h4>Question Two:</h4>
-        <h5>Generally speaking, you rely more on your own experience than your imagination:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qTwo"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
-
-  <div class="dropdown show">
+  <div class="form-group">
         <h4>Question Three:</h4>
         <h5>Generally speaking, you rely more on your own experience than your imagination:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
+     <select class="form-control" id="qThree">
+        <a option value="1">1</option>
+         <a option value="2">2</option>
+         <a option value="3">3</option>
+        <a option value="4">4</option>
+         <a option value="5">5</option>
+      </select>
+</div>
 
-  <div class="dropdown show">
+  <div class="form-group">
         <h4>Question Four:</h4>
         <h5>You find it easy to stay relaxed and focused even when there is some pressure:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qFour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
+        <select class="form-control" id="qFour">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
 
-  <div class="dropdown show">
+  <div class="form-group">
        <h4>Question Five:</h4>
         <h5>You rarely do something just out of sheer curiosity:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qFive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
+        <select class="form-control" id="qFive">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
 
-  <div class="dropdown show">
+  <div class="form-group">
         <h4>Question Six:</h4>
         <h5>People can rarely upset you:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qSix" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
+        <select class="form-control" id="qSix">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
 
-  <div class="dropdown show">
+  <div class="form-group">
         <h4>Question Seven:</h4>
         <h5>It is often difficult for you to relate to other people’s feelings:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qSeven" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
+    <select class="form-control" id="qSeven">
+        <a option value="1">1</option>
+         <a option value="2">2</option>
+         <a option value="3">3</option>
+        <a option value="4">4</option>
+         <a option value="5">5</option>
+        </select>
+</div>
 
-  <div class="dropdown show">
+  <div class="form-group">
         <h4>Question Eight:</h4>
         <h5>In a discussion, truth should be more important than people’s sensitivities:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qEight" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
+        <select class="form-control" id="qEight">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
 
-  <div class="dropdown show">
+  <div class="form-group">
         <h4>Question Nine:</h4>
         <h5>You rarely get carried away by fantasies and ideas:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qNine" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
+        <select class="form-control" id="qNine">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
 
-  <div class="dropdown show">
+  <div class="form-group">
         <h4>Question Ten:</h4>
         <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not:</h5>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="qTen" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Make your selection
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      <a class="dropdown-item" href="#">4</a>
-      <a class="dropdown-item" href="#">5</a>
-      </div>
-  </div>
+        <select class="form-control" id="qOne">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+          </div>
 
   <button id="submitBtn" class="btn btn-primary">Submit!</button>
 
@@ -196,17 +167,16 @@
       </div>
     </div>
   </div>
-</div>
 
 </body>
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 
-
 $(document).ready(function() {
    
-  $(".dropdown-toggle").dropdown();{
+  // $(".form-group").on('click' function(event)(){
+  //   console.log('click');
 
   $("#submitBtn").on("click", function(event) {
 		event.preventDefault();
@@ -243,6 +213,6 @@ $(document).ready(function() {
 			alert("Finish the survery if you want a friend!!");
 		}
   }); 
-   });
-  
+   )};
+  // };
 </script>

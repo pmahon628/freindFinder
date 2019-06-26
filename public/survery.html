@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Freind Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    
+</head>
+<body>   
+    <style>
+
+        body, div{ padding: 10px;
+            } 
+
+            </style>
+
+   <div class="jumbotron"> 
+<h1>Hello, welcome to friend finder since noone needs to be lonely.</h1>
+<h2>We are going to ask your 10 questions, and please be honest!</h2>
+<h3>The questions are rated from 1-5 or low to high.  Have Fun!</h3>
+   </div>
+
+   <div class="form-group">
+				<input id="name" type="text" class="form-control" placeholder="Humpty Dumpty">
+			</div>
+      
+      <div class="form-group">
+      <h4>Question One:</h4>
+        <h5>your mind is always buzzing with unexplored ideas and plans:</h5>
+    <select class="form-control" id="qOne">
+      <a option value="1">1</option>
+      <a option value="2">2</option>
+      <a option value="3">3</option>
+      <a option value="4">4</option>
+      <a option value="5">5</option>
+      </select>
+    </div>
+  
+
+  <div class="form-group">
+    <h4>Question Two:</h4>
+    <h5>Generally speaking, you rely more on your own experience than your imagination:</h5>
+      <select class="form-control" id="qTwo">
+          <a option value="1">1</option>
+           <a option value="2">2</option>
+           <a option value="3">3</option>
+          <a option value="4">4</option>
+           <a option value="5">5</option>
+          </select>
+  </div>
+
+  <div class="form-group">
+        <h4>Question Three:</h4>
+        <h5>Generally speaking, you rely more on your own experience than your imagination:</h5>
+     <select class="form-control" id="qThree">
+        <a option value="1">1</option>
+         <a option value="2">2</option>
+         <a option value="3">3</option>
+        <a option value="4">4</option>
+         <a option value="5">5</option>
+      </select>
+</div>
+
+  <div class="form-group">
+        <h4>Question Four:</h4>
+        <h5>You find it easy to stay relaxed and focused even when there is some pressure:</h5>
+        <select class="form-control" id="qFour">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
+
+  <div class="form-group">
+       <h4>Question Five:</h4>
+        <h5>You rarely do something just out of sheer curiosity:</h5>
+        <select class="form-control" id="qFive">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
+
+  <div class="form-group">
+        <h4>Question Six:</h4>
+        <h5>People can rarely upset you:</h5>
+        <select class="form-control" id="qSix">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
+
+  <div class="form-group">
+        <h4>Question Seven:</h4>
+        <h5>It is often difficult for you to relate to other people’s feelings:</h5>
+    <select class="form-control" id="qSeven">
+        <a option value="1">1</option>
+         <a option value="2">2</option>
+         <a option value="3">3</option>
+        <a option value="4">4</option>
+         <a option value="5">5</option>
+        </select>
+</div>
+
+  <div class="form-group">
+        <h4>Question Eight:</h4>
+        <h5>In a discussion, truth should be more important than people’s sensitivities:</h5>
+        <select class="form-control" id="qEight">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
+
+  <div class="form-group">
+        <h4>Question Nine:</h4>
+        <h5>You rarely get carried away by fantasies and ideas:</h5>
+        <select class="form-control" id="qNine">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+    </div>
+
+  <div class="form-group">
+        <h4>Question Ten:</h4>
+        <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not:</h5>
+        <select class="form-control" id="qOne">
+            <a option value="1">1</option>
+             <a option value="2">2</option>
+             <a option value="3">3</option>
+            <a option value="4">4</option>
+             <a option value="5">5</option>
+            </select>
+          </div>
+
+  <button id="submitBtn" class="btn btn-primary">Submit!</button>
+
+  <div id="friendModal" class="modal fade" role="dialog">
+       <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Your Friend</h1>
+        </div>
+        <div class="modal-body">
+          <h2 id="Friend"></h2>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+$(document).ready(function() {
+   
+  // $(".form-group").on('click' function(event)(){
+  //   console.log('click');
+
+  $("#submitBtn").on("click", function(event) {
+		event.preventDefault();
+		console.log('click');
+		var valid = true;
+		if($("#name").val() === "") {
+			valid = false;
+		} else if($("#qOne").val() === "empty" || $("#qTwo").val() === "empty" || $("#qThree").val() === "empty" || $("#qFour").val() === "empty" || $("#qfive").val() === "empty" || $("#qSix").val() === "empty" || $("#qSeven").val() === "empty" || $("#qEight").val() === "empty" || $("#qNine").val() === "empty" || $("#qTen").val() === "empty") {
+			valid = false;
+		}
+		if(valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				scores: [
+					$("#qOne").val().trim(),
+					$("#qTwo").val().trim(),
+					$("#qThree").val().trim(),
+					$("#qFour").val().trim(),
+					$("#qFive").val().trim(),
+					$("#qSix").val().trim(),
+					$("#qSeven").val().trim(),
+					$("#qEight").val().trim(),
+					$("#qNine").val().trim(),
+					$("#qTen").val().trim()
+				]
+			};
+			var currentURL = window.location.origin;
+			$.post(currentURL + "/api/friends", newUser, function(data) {
+				$("#bestFriend").text(data.name);
+				$("#FriendModal").modal("toggle");
+			});
+		} else {
+			
+			alert("Finish the survery if you want a friend!!");
+		}
+  }); 
+   )};
+  // };
+</script>

@@ -204,12 +204,11 @@ $(document).ready(function() {
 				]
 			};
 			var currentURL = window.location.origin;
-			$.post(currentURL + "/api/friends", newUser, function(data) {
+			$.post(currentURL + "./app/friends.js", newUser, function(data) {
 				$("#bestFriend").text(data.name);
 				$("#FriendModal").modal("toggle");
 			});
 		} else {
-			
 			alert("Finish the survery if you want a friend!!");
 		}
   }); 

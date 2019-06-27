@@ -1,7 +1,7 @@
 //holds array of objects 
 //name, photo, scores
 
- var Freind = [
+ var freinds = [
    { name = "Jake",
      scores = [3,2,4,2,1,3,5,4,3,2],
  },

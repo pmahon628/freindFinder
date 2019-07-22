@@ -2,20 +2,21 @@
 // A POST routes /api/friends. 
 // This will be used to handle incoming survey results. 
 // This route will also be used to handle the compatibility logic.
+var path = require('path');
 
-var friends = require("../data/friends");
+var friends = require("../app/freinds.js");
 
 module.exports = function(app) {
-  app.get("/api/friends", function(req, res) {
-    res.json(friends);
+  // GET 
+  app.get("/api/freinds", function(req, res) {
+    res.json(freinds);
   });
-
-  app.post("/api/friends", function(req, res) {
+//  ADD(post) Entry
+  app.post("../app/freinds.js", function(req, res) {
     console.log(req.body.scores);
 
     var user = req.body;
 
-   
     for(var i = 0; i < user.scores.length; i++) {
       user.scores[i] = parseInt(user.scores[i]);
     }
